@@ -1,6 +1,13 @@
 
 # Team: Students Of Programing And Software (SOPAS)
 
+# Integrantes: 
+
+- Ricardo Andres Chamorro Martinez - A00399846
+- Oscar Stiven Muñoz Ramirez - A00399922
+- Diego Armando Polanco Lozano - A00399926
+- Luis Manuel Rojas Correa - A00399289
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/bdkSXPyS)
 ## Tarea Integradora 1
 **Objetivos Terminales**
