@@ -72,6 +72,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -338,7 +341,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="56cbc89b-78b1-48ba-b2a7-8d4cbda9339e" name="Changes" comment="" />
+      <changelist id="c345c943-62ec-4bfe-b1d5-fdfe34cf6f7e" name="Changes" comment="" />
       <created>1709761033666</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -349,6 +352,7 @@
       <workItem from="1709907192230" duration="2998000" />
       <workItem from="1709911804708" duration="203000" />
       <workItem from="1709912019360" duration="2907000" />
+      <workItem from="1709935102959" duration="727000" />
     </task>
     <servers />
   </component>

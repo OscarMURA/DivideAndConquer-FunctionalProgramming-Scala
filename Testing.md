@@ -33,7 +33,7 @@ Este algoritmo cuenta la cantidad de inversiones necesarias para ordenar de form
 
 #### Prueba 4
 
-**Nombre de prueba: Inversiones en lista ordenada de manera ascendente*
+**Nombre de prueba: Inversiones en lista ordenada de manera ascendente**
 
 **Entrada:** List(0, 1, 2, 3, 4, 5)
 
@@ -52,7 +52,7 @@ Este algoritmo cuenta la cantidad de inversiones necesarias para ordenar de form
 
 #### Prueba 6
 
-**Nombre de prueba: Inversiones en lista vacía*
+**Nombre de prueba: Inversiones en lista vacía**
 
 **Entrada:** List()
 
