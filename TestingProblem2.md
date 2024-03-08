@@ -254,7 +254,7 @@ que contiene tanto números positivos como negativos.
 *Salida esperada:* Nil
 *Objetivo:* Verificar si la función lowerList devuelve una lista vacía cuando no hay elementos menores que -6 en una 
 lista que contiene tanto números positivos como negativos.
-```
+
 
 4. **updatedQuickSort**:
    - Este algoritmo implementa una versión actualizada del algoritmo de ordenación rápida (QuickSort). 
