@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c345c943-62ec-4bfe-b1d5-fdfe34cf6f7e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,17 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ti1-2024-1-e5-sopas" type="f1a62948:ProjectNode" />
+                <item name="hello" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hello" type="f1a62948:ProjectNode" />
+                <item name="hello" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hello" type="f1a62948:ProjectNode" />
+                <item name="hello-build" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -64,18 +75,27 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.Workshop2Test.executor": "Run",
+    "MUnit.Workshop1Test (1).executor": "Run",
+    "MUnit.Workshop1Test.executor": "Run",
+    "MUnit.Workshop2Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chamo/Pictures/ti1-2024-1-e5-sopas",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="MUnit.Workshop1Test">
+  <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="ti1-2024-1-e5-sopas-build" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,6 +202,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Workshop1Test (1)" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="chamo.Pictures.ti1-2024-1-e5-sopas.hello~1" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="C:\Users\chamo\Pictures\ti1-2024-1-e5-sopas" />
+      <option name="testClassPath" value="Workshop1Test" />
+      <option name="workingDirectory" value="C:\Users\chamo\Pictures\ti1-2024-1-e5-sopas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Workshop1Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="integradoras.ti1-2024-1-e5-sopas.hello" />
       <option name="VMParameters" value="" />
@@ -229,33 +275,6 @@
       <option name="testKind" value="Class" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <option name="testClassPath" value="Workshop2Test" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop2Test.lowerList - Positive Test 12" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop2Test" />
-      <option name="testName" value="lowerList - Positive Test 12" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -317,11 +336,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="MUnit.Workshop1Test (1)" />
         <item itemvalue="MUnit.Workshop1Test" />
         <item itemvalue="MUnit.Workshop2Test" />
         <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 12" />
         <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 11" />
-        <item itemvalue="MUnit.Workshop2Test.lowerList - Positive Test 12" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +357,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="56cbc89b-78b1-48ba-b2a7-8d4cbda9339e" name="Changes" comment="" />
+      <changelist id="c345c943-62ec-4bfe-b1d5-fdfe34cf6f7e" name="Changes" comment="" />
       <created>1709761033666</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
