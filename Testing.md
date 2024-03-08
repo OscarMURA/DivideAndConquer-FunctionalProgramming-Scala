@@ -1,7 +1,7 @@
 
 # Pruebas del algoritmo 3 BuscketSort:
 
-Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para ordenar de forma ascendente una lista. Para hacer esto el algoritmo cuenta que elementos de la cola son menores que la cabeza de la lista, y se repite recursivamente con la cola de la lista.
+El algoritmo de Bucket Sort divide la lista de entrada en una serie de "cajas" basadas en el rango de valores de los elementos. Cada caja se ordena individualmente utilizando un algoritmo de ordenación local, como el de inserción. Finalmente, las cajas ordenadas se concatenan para formar la lista de salida, resultando en una lista completamente ordenada. La eficiencia del algoritmo depende de cómo se distribuyen los elementos entre las cajas, siendo más efectivo cuando los datos están uniformemente distribuidos dentro de un rango conocido.
 
 #### Prueba 1-BuscketSort
 
