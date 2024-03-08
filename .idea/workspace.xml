@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56cbc89b-78b1-48ba-b2a7-8d4cbda9339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/workshop/InterfaceWorkshop2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/Workshop2Test.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/workshop/Workshop2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/workshop/Workshop2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/Workshop2Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/Workshop2Test.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +67,7 @@
     "Application.Workshop2.executor": "Run",
     "Application.main.executor": "Run",
     "MUnit.Workshop2Test.equalList - Positive Test 1.executor": "Run",
+    "MUnit.Workshop2Test.equalList - Positive Test 11.executor": "Run",
     "MUnit.Workshop2Test.executor": "Run",
     "MUnit.Workshop2Test.greaterList - Negative Test 3.executor": "Run",
     "MUnit.Workshop2Test.greaterList - Positive Test 8.executor": "Run",
@@ -176,19 +172,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <method v="2" />
     </configuration>
-    <configuration name="Workshop2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="workshop.Workshop2" />
-      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="workshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ti1-2024-1-e5-sopas-build" />
       <method v="2">
@@ -228,7 +211,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Workshop2Test.equalList - Positive Test 1" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="Workshop2Test.lowerList - Positive Test 11" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
       <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
@@ -249,13 +232,13 @@
       <option name="testKind" value="Test name" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <option name="testClassPath" value="Workshop2Test" />
-      <option name="testName" value="equalList - Positive Test 1" />
+      <option name="testName" value="lowerList - Positive Test 11" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 6" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="Workshop2Test.lowerList - Positive Test 12" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
       <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
@@ -276,13 +259,13 @@
       <option name="testKind" value="Test name" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <option name="testClassPath" value="Workshop2Test" />
-      <option name="testName" value="updatedQuickSort - Positive Test 6" />
+      <option name="testName" value="lowerList - Positive Test 12" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 7" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 11" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
       <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
@@ -303,7 +286,34 @@
       <option name="testKind" value="Test name" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <option name="testClassPath" value="Workshop2Test" />
-      <option name="testName" value="updatedQuickSort - Positive Test 7" />
+      <option name="testName" value="updatedQuickSort - Positive Test 11" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 12" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <option name="testClassPath" value="Workshop2Test" />
+      <option name="testName" value="updatedQuickSort - Positive Test 12" />
       <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -312,10 +322,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="MUnit.Workshop2Test" />
-        <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 7" />
-        <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 6" />
-        <item itemvalue="Application.Workshop2" />
-        <item itemvalue="MUnit.Workshop2Test.equalList - Positive Test 1" />
+        <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 12" />
+        <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 11" />
+        <item itemvalue="MUnit.Workshop2Test.lowerList - Positive Test 12" />
+        <item itemvalue="MUnit.Workshop2Test.lowerList - Positive Test 11" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +352,7 @@
       <workItem from="1709761296720" duration="397000" />
       <workItem from="1709905664309" duration="825000" />
       <workItem from="1709911804708" duration="203000" />
-      <workItem from="1709912019360" duration="2447000" />
+      <workItem from="1709912019360" duration="2907000" />
     </task>
     <servers />
   </component>
@@ -359,12 +369,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/test/scala/Workshop2Test.scala</url>
-          <line>96</line>
+          <line>107</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/test/scala/Workshop2Test.scala</url>
-          <line>196</line>
+          <line>207</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -55,6 +55,17 @@ class Workshop2Test extends FunSuite {
     assertEquals(result, Nil)
   }
 
+  // Tests for equalList method with negatives and positives
+  test("equalList - Positive Test 11") {
+    val result = Workshop2.equalList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 0)
+    assertEquals(result, List(0))
+  }
+
+  test("equalList - Positive Test 12") {
+    val result = Workshop2.equalList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 6)
+    assertEquals(result, Nil)
+  }
+
 
 
   // Tests for greaterList method
@@ -109,6 +120,17 @@ class Workshop2Test extends FunSuite {
     assertEquals(result, List(-5, -6, -7, -8))
   }
 
+  // Tests for greaterList method with negatives and positives
+  test("greaterList - Positive Test 11") {
+    val result = Workshop2.greaterList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 0)
+    assertEquals(result, List(1, 2, 3, 4, 5))
+  }
+
+  test("greaterList - Positive Test 12") {
+    val result = Workshop2.greaterList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 6)
+    assertEquals(result, Nil)
+  }
+
   // Tests for lowerList method
   test("lowerList - Positive Test 1") {
     val result = Workshop2.lowerList(List(1, 2, 3), 2)
@@ -159,6 +181,16 @@ class Workshop2Test extends FunSuite {
   test("lowerList - Positive Test 10") {
     val result = Workshop2.lowerList(List(-5, -6, -7, -8), -1)
     assertEquals(result, List(-5, -6, -7, -8))
+  }
+
+  test("lowerList - Positive Test 11") {
+    val result = Workshop2.lowerList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 0)
+    assertEquals(result, List(-5, -4, -3, -2, -1))
+  }
+
+  test("lowerList - Positive Test 12") {
+    val result = Workshop2.lowerList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), -6)
+    assertEquals(result, Nil)
   }
 
 
@@ -214,6 +246,18 @@ class Workshop2Test extends FunSuite {
     val result = Workshop2.updatedQuickSort(List(-10, -5, -7, -3, -2, -1))
     assertEquals(result, List(-10, -7, -5, -3, -2, -1))
   }
+
+  test("updatedQuickSort - Positive Test 11") {
+    val result = Workshop2.updatedQuickSort(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5))
+    assertEquals(result, List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5))
+  }
+
+  test("updatedQuickSort - Positive Test 12") {
+    val result = Workshop2.updatedQuickSort(List(5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5))
+    assertEquals(result, List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5))
+  }
+
+
 
 
 }
