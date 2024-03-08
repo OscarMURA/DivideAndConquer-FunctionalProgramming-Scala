@@ -1,9 +1,7 @@
 
-# Pruebas del algoritmo 3 BuscketSort:
+# Pruebas del algoritmo 3 BucketSort:
 
-Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para ordenar de forma ascendente una lista. Para hacer esto el algoritmo cuenta que elementos de la cola son menores que la cabeza de la lista, y se repite recursivamente con la cola de la lista.
-
-#### Prueba 1-BuscketSort
+#### Prueba 1-BucketSort
 
 ***Nombre de prueba:***
 
@@ -13,7 +11,7 @@ Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para 
 
 ***Objetivo:*** Verificar el correcto funcionamiento en una lista desordenada de números positivos
 
-#### Prueba 2-BuscketSort
+#### Prueba 2-BucketSort
 
 ***Entrada:*** List(-3.2, 5.7, -1.1, 8.9, 0.5)
 
@@ -21,7 +19,7 @@ Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para 
 
 ***Objetivo:*** Verificar el correcto funcionamiento en una lista desordenada de números negativos y positivos
 
-#### Prueba 3-BuscketSort
+#### Prueba 3-BucketSort
 
 
 ***Entrada:*** List(3.2, 1.5, 3.2, 2.1, 2.1)
@@ -31,7 +29,7 @@ Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para 
 ***Objetivo:*** Verificar el correcto funcionamiento en una lista con duplicados
 
 
-#### Prueba 4-BuscketSort
+#### Prueba 4-BucketSort
 
 ***Entrada:*** List()
 
@@ -40,7 +38,7 @@ Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para 
 
 ***Objetivo:*** Verificar el correcto funcionamiento en una Lista vacía
 
-#### Prueba 5-BuscketSort
+#### Prueba 5-BucketSort
 
 ***Entrada:*** List(10.0)
 
@@ -48,7 +46,7 @@ Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para 
 
 ***Objetivo:*** Verificar el correcto funcionamiento en una lista con un solo elemento
 
-#### Prueba 6-BuscketSort
+#### Prueba 6-BucketSort
 
 ***Entrada:*** List(1.0, 2.0, 3.0, 4.0, 5.0)
 
@@ -56,7 +54,7 @@ Este algoritmo lo que hace es contar la cantidad de inversiones necesarias para 
 
 ***Objetivo:*** Verificar el correcto funcionamiento en una Lista ya ordenada
 
-#### Prueba 7-BuscketSort
+#### Prueba 7-BucketSort
 
 ***Entrada:*** List(5.0, 4.0, 3.0, 2.0, 1.0)
 
