@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hello.iml" filepath="$PROJECT_DIR$/.idea/modules/hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hello-build.iml" filepath="$PROJECT_DIR$/.idea/modules/hello-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.hello-build.iml" filepath="$PROJECT_DIR$/.idea/modules/project.hello-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ti1-2024-1-e5-sopas.hello.iml" filepath="$PROJECT_DIR$/.idea/modules/ti1-2024-1-e5-sopas.hello.iml" />
     </modules>
   </component>
 </project>
