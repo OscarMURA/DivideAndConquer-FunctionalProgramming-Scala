@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c345c943-62ec-4bfe-b1d5-fdfe34cf6f7e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +75,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.Workshop2Test.executor": "Run",
+    "JUnit.Workshop3Test.executor": "Run",
     "MUnit.Workshop1Test (1).executor": "Run",
     "MUnit.Workshop1Test.executor": "Run",
     "MUnit.Workshop2Test.executor": "Run",

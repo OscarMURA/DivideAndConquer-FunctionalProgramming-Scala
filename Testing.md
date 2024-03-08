@@ -203,16 +203,8 @@ El algoritmo de Bucket Sort divide la lista de entrada en una serie de "cajas" b
 
 **Objetivo:** Asegura que el algoritmo maneje adecuadamente los elementos repetidos en la lista.
 
+
 #### Prueba 11-BucketSort
-**Nombre prueba:** Lista con numeros enteros
-
-**Entrada:** List(9, 5, 2, 8, 3)
-
-**Salida esperada:** List(2.0, 3.0, 5.0, 8.0, 9.0)
-
-**Objetivo:** Valida que la función pueda ordenar correctamente una lista que contiene únicamente números enteros.
-
-#### Prueba 12-BucketSort
 **Nombre prueba:** Lista con números en punto flotante de gran tamaño
 
 **Entrada:** List(99999.999, 12345.678, 54321.987, 98765.432, 67890.123)
