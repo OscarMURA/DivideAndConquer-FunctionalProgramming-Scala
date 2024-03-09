@@ -100,7 +100,7 @@ Este algoritmo cuenta la cantidad de inversiones necesarias para ordenar de form
 
 **Objetivo:** Verificar el correcto funcionamiento en una lista de elementos repetidos ordenados
 
-# Problema 3 Quick Sort con 3 particiones
+# Problema 2 Quick Sort con 3 particiones
 
 
 Las implementaciones de las funciones equalList, greaterList y lowerList se combinan en la función updatedQuickSort
