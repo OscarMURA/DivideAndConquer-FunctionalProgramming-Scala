@@ -1,4 +1,4 @@
-# Pruebas del algoritmo 1:
+# Pruebas del algoritmo 1 - Cantidad de Inversiones
 Este algoritmo cuenta la cantidad de inversiones necesarias para ordenar de forma ascendente una lista. Para hacer esto el algoritmo cuenta que elementos de la cola son menores que la cabeza, y se repite recursivamente con la cola de la lista. Se detiene una vez llega a la cola de la lista.
 
 #### Prueba 1
