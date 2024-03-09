@@ -1,4 +1,4 @@
-# Problema 3 Quick Sort con 3 particiones
+# Problema 2 Quick Sort con 3 particiones
 
 
 Las implementaciones de las funciones equalList, greaterList y lowerList se combinan en la función updatedQuickSort
