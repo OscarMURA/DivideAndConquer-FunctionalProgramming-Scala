@@ -1,29 +1,56 @@
 package workshop
 
+import scala.annotation.tailrec
+
 object Workshop3 {
-  def sort(arr: List[Double]): List[Double] = {
-    if (arr.isEmpty) return List[Double]()
 
-    def insertSort(x: Double, sortedList: List[Double]): List[Double] = sortedList match {
+  def bucketSortGeneric[T:Numeric](arr: List[T],fuction: (T, T) => Boolean, funtionInterval: (T, T, Int) => Int, maxValue: T): List[T] = {
+    if (arr.isEmpty) return List[T]()
+    //case head :: tail => if (x <= head) x :: sortedList else head :: insertSort(x, tail)
+
+    def insertSort(x: T, sortedList: List[T]): List[T] = sortedList match {
       case Nil => List(x)
-      case head :: tail => if (x <= head) x :: sortedList else head :: insertSort(x, tail)
+      case head :: tail =>
+        if (fuction(x, head)) x :: sortedList
+        else head :: insertSort(x, tail)
     }
-
-    def divideIntoBuckets(arr: List[Double], buckets: List[List[Double]], maxVal: Double, minVal: Double): List[List[Double]] = arr match {
+    def divideIntoBuckets(arr: List[T], buckets: List[List[T]], maxVal: T): List[List[T]] = arr match {
       case Nil => buckets
       case head :: tail =>
-        val index = Math.min((head.toDouble / maxVal.toDouble * (buckets.length.toDouble - (0.4))).toInt, buckets.length - 1) //((head - minVal) / (maxVal - minVal) * (buckets.length-1 )).toInt
+        val index: Int = funtionInterval(head, maxVal, buckets.length)
+        //Math.min((head / maxVal * (buckets.length.toDouble - (0.4))).toInt, buckets.length - 1) //((head - minVal) / (maxVal - minVal) * (buckets.length-1 )).toInt
         //Math.min((head.toDouble / maxVal.toDouble * buckets.length.toDouble).toInt, buckets.length - 1)
         val newBuckets = buckets.updated(index, insertSort(head, buckets(index)))
-        println(newBuckets.mkString(", "))
-        divideIntoBuckets(tail, newBuckets, maxVal, minVal)
+        //println(newBuckets.mkString(", "))
+        divideIntoBuckets(tail, newBuckets, maxVal)
     }
-
-    val maxVal = arr.max
-    val minVal = arr.min
+    val maxVal: T = maxValue
     val numBuckets = arr.length
-    val buckets = List.fill(3)(Nil)
-    val sortedBuckets = divideIntoBuckets(arr, buckets, maxVal, minVal)
+    val buckets: List[List[T]] = List.fill(10000)(Nil)
+    val sortedBuckets = divideIntoBuckets(arr, buckets, maxVal)
     sortedBuckets.flatten
   }
+
+
+  def sort(arr: List[Int], fuction: (Int, Int) => Boolean): List[Int] = {
+    if (arr.isEmpty) return List[Int]()
+    def insertSort(x: Int, sortedList: List[Int]): List[Int] = sortedList match {
+        case Nil => List(x)
+        case head :: tail => if (x <= head) x :: sortedList else head :: insertSort(x, tail)
+    }
+    def divideIntoBuckets(arr: List[Int], buckets: List[List[Int]], maxVal: Int, minVal: Int): List[List[Int]] = arr match {
+        case Nil => buckets
+        case head :: tail =>
+          val index = Math.min((head.toDouble / maxVal.toDouble * (buckets.length.toDouble - (0.4))).toInt, buckets.length - 1) //((head - minVal) / (maxVal - minVal) * (buckets.length-1 )).toInt
+          //Math.min((head.toDouble / maxVal.toDouble * buckets.length.toDouble).toInt, buckets.length - 1)
+          val newBuckets = buckets.updated(index, insertSort(head, buckets(index)))
+          divideIntoBuckets(tail, newBuckets, maxVal, minVal)
+    }
+      val maxVal = arr.max
+      val minVal = arr.min
+      val numBuckets = arr.length
+      val buckets = List.fill(1000)(Nil)
+      val sortedBuckets = divideIntoBuckets(arr, buckets, maxVal, minVal)
+      sortedBuckets.flatten
+    }
 }
