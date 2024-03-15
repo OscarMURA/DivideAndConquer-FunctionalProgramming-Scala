@@ -2,7 +2,8 @@ package workshop
 
 object Workshop3 {
   def sort(arr: List[Double]): List[Double] = {
-    
+    if (arr.isEmpty) return List[Double]()
+
     def insertSort(x: Double, sortedList: List[Double]): List[Double] = sortedList match {
       case Nil => List(x)
       case head :: tail => if (x <= head) x :: sortedList else head :: insertSort(x, tail)
