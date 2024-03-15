@@ -19,7 +19,7 @@ def main(): Unit = {
     case Some(numbers) =>
       println("Loaded file content:")
       //val sortedData = Workshop3.bucketSortGeneric(numbers, (x: Int, head: Int) => (x <= head), (head: Int, maxVal: Int, size: Int) => Math.min((head*1.0 / 1.0*maxVal * (size*1.0 - (0.4))).toInt, size - 1), numbers.max)
-      val sortedData =Workshop3.sort(numbers,(x: Int, head: Int) => (x <= head))
+      val sortedData =Workshop3.BucketSort(numbers,(x: Int, head: Int) => (x <= head))
       //val sortedData = Workshop3.bucketSortGeneric(numbers,  (head: Int, maxVal: Int, size: Int) => Math.min((head*1.0 / 1.0*maxVal * (size*1.0 - (0.4))).toInt, size - 1), numbers.max)
       def compareInt(x: Int, y: Int): Boolean = x < y
       sortedData.foreach(println)

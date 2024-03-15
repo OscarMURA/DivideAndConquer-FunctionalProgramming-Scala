@@ -2,7 +2,7 @@ package workshop
 
 import scala.annotation.tailrec
 
-object Workshop3 {
+object Workshop3 extends InterfaceWorkshop3{
 
   def bucketSortGeneric[T:Numeric](arr: List[T],fuction: (T, T) => Boolean, funtionInterval: (T, T, Int) => Int, maxValue: T): List[T] = {
     if (arr.isEmpty) return List[T]()
@@ -32,7 +32,7 @@ object Workshop3 {
   }
 
 
-  def sort(arr: List[Int], fuction: (Int, Int) => Boolean): List[Int] = {
+  def BucketSort(arr: List[Int], fuction: (Int, Int) => Boolean): List[Int] = {
     if (arr.isEmpty) return List[Int]()
     def insertSort(x: Int, sortedList: List[Int]): List[Int] = sortedList match {
         case Nil => List(x)
@@ -53,4 +53,5 @@ object Workshop3 {
       val sortedBuckets = divideIntoBuckets(arr, buckets, maxVal, minVal)
       sortedBuckets.flatten
     }
+
 }
