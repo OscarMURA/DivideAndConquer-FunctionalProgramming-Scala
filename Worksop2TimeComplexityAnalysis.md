@@ -63,7 +63,7 @@ En el caso promedio, QuickSort con tres particiones produciría una mezcla de pa
 
 **Mejor Caso de Particionamiento - Arbol de recursion**
 
-![Captura de pantalla 2024-03-16 151447.png](..%2F..%2FPictures%2FScreenshots%2FCaptura%20de%20pantalla%202024-03-16%20151447.png)
+![Captura de pantalla](ruta/a/Captura de pantalla 2024-03-16 151447.png)
 
 Primero calculamos la altura del arbol:
 
