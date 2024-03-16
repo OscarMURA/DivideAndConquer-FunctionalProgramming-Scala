@@ -60,7 +60,7 @@ $T(n)=Θ(n)$
 
 **Particionamiento Balanceado**
 
-En el caso promedio, QuickSort con tres particiones produciría una mezcla de particiones "buenas" y "malas" en cada nivel de recursión. En una ejecución promedio del algoritmo, las particiones estarían distribuidas de manera aleatoria a lo largo del árbol de recursión. La intuición aquí es similar a la del QuickSort con dos particiones, donde la ejecución promedio se acerca más al mejor caso que al peor caso. La distribución aleatoria de las particiones equilibraría el tiempo de ejecución y llevaría a una complejidad promedio de $Θ((n)log(n))$
+En el caso promedio, QuickSort con tres particiones produciría una mezcla de particiones "balanceadas" y "desbalanceadas" en cada nivel de recursión. En una ejecución promedio del algoritmo, las particiones estarían distribuidas de manera aleatoria a lo largo del árbol de recursión. La intuición aquí es similar a la del QuickSort con dos particiones, donde la ejecución promedio se acerca más al mejor caso que al peor caso. La distribución aleatoria de las particiones equilibraría el tiempo de ejecución y llevaría a una complejidad promedio de $Θ((n)log(n))$
 
 
 
