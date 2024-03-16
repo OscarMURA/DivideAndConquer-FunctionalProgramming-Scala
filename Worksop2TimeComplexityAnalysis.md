@@ -11,7 +11,7 @@ $T(n)=T(n-1)+T(0)+Θ(n)$
 Intuitivamente, si sumamos los costos incurridos en cada nivel de la recursión, obtenemos una serie aritmética, que evalúa a $Θ(n^2)$. Es decir, que si el partiocnamiento se encuentra severamente desbalanceado en cada nivel resursivo del algoritmo, se obtendrá un complejidad de $Θ(n^2)$. 
 
 
-**Mejor Caso de Particionamiento **
+**Mejor Caso de Particionamiento**
 
 En el mejor caso, el algoritmo produce dos subproblemas equilibrados en cada llamada recursiva, donde los elementos se distribuyen de manera uniforme entre los tres subarreglos. En este caso, tomando en cuenta que la lista de iguales ya se encuentra ordenada, y no supone un subproblema, la recurrencia para el tiempo de ejecución queda determinado por:
 
