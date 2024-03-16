@@ -1,6 +1,6 @@
 La complejidad algorítmica de $QuickSort$ será determinanda de acuerdo a la distribución inicial de los elementos en la lista a ser ordenada, y la elección del pivote. Lo anterior, tomando en cuenta que se darán los siguientes casos de acuerdo al particionamiento de la lista:
 
-**Pero caso de Particionamiento**
+**Peor caso de Particionamiento**
 
 El peor caso para $quicksort$ con 3 particionamientos, ocurre cuando el  algoritmo de particionamiento produce un subproblema con  $n-1$ elementos y uno con 0 elementos; esto es las dos sublistas que faltan por ser ordenadas, ya que la lista de iguales no demanda una complejidad de ordenamiento. 
 
@@ -23,7 +23,7 @@ Si $f(n)=𝝮(n^{log_b a + e})$, para $e>0$ y si $af(n/b)\leq cf(n)$ para algun 
 
 entonces $T(n)=Θ(f(n))$
 
-Conodicendo los parámetros de mi recurrencia: 
+Conociendo los parámetros de mi recurrencia: 
 
 $a=2$
 
@@ -53,7 +53,7 @@ $(\frac{2}{3})\leq c$
 
 $0.666\leq c$
 
-Así pudiendose afirmar que en el mejor caso el quicksort con 3 particiones tiene una complejidad algortimica tendiente a:
+Así podemos afirmar que en el mejor caso el quicksort con 3 particiones tiene una complejidad algortimica que tiende a:
 
 $T(n)=Θ(n)$
 
