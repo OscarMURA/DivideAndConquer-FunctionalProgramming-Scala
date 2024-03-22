@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f252319-9137-43b1-8269-a173fe02d364" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/workshop/InterfaceWorkshop3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/workshop/InterfaceWorkshop3.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/workshop/Workshop3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/workshop/Workshop3.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,20 +75,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="MUnit.Workshop1Test">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ti1-2024-1-e5-sopas-build" />
       <method v="2">
@@ -367,7 +369,13 @@
       <workItem from="1710438443088" duration="8105000" />
       <workItem from="1710450037045" duration="1562000" />
       <workItem from="1710513112228" duration="461000" />
-      <workItem from="1710516862273" duration="5459000" />
+      <workItem from="1710516862273" duration="6024000" />
+      <workItem from="1710528781404" duration="790000" />
+      <workItem from="1710536281374" duration="47000" />
+      <workItem from="1710538230088" duration="3083000" />
+      <workItem from="1710642740208" duration="4848000" />
+      <workItem from="1710969866171" duration="851000" />
+      <workItem from="1710984407865" duration="397000" />
     </task>
     <servers />
   </component>
