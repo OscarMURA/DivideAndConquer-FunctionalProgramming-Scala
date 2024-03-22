@@ -45,7 +45,71 @@ class Workshop3Test extends FunSuite{
   }
 
 
- 
+  test("bucketSortGeneric - Positive Test 1: Desordenado positivo") {
+    val arr = List(5, 2, 9, 3, 7, 1, 4, 8, 6)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Int, b: Int) => a < b, (x: Int, max: Int, numBuckets: Int) => (x * numBuckets) / (max + 1), 9, 1)
+    assertEquals(sortedArr, List(1, 2, 3, 4, 5, 6, 7, 8, 9))
+  }
+
+  test("bucketSortGeneric - Positive Test 2: Desordenado negativo") {
+    val arr = List(-5, -2, -9, -3, -7, -1, -4, -8, -6)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Int, b: Int) => a < b, (x: Int, max: Int, numBuckets: Int) => (x * numBuckets) / (max + 1), 9, 1)
+    assertEquals(sortedArr, List(-9, -8, -7, -6, -5, -4, -3, -2, -1))
+  }
+
+  test("bucketSortGeneric - Positive Test 3: Ordenado positivo") {
+    val arr = List(1, 2, 3, 4, 5, 6, 7, 8, 9)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Int, b: Int) => a < b, (x: Int, max: Int, numBuckets: Int) => (x * numBuckets) / (max + 1), 9, 1)
+    assertEquals(sortedArr, List(1, 2, 3, 4, 5, 6, 7, 8, 9))
+  }
+
+  test("bucketSortGeneric - Positive Test 4: Ordenado negativo") {
+    val arr = List(-1, -2, -3, -4, -5, -6, -7, -8, -9)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Int, b: Int) => a < b, (x: Int, max: Int, numBuckets: Int) => (x * numBuckets) / (max + 1), 9, 1)
+    assertEquals(sortedArr, List(-9, -8, -7, -6, -5, -4, -3, -2, -1))
+  }
+
+  test("bucketSortGeneric - Positive Test 5: Lista vacía") {
+    val arr = List.empty[Int]
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Int, b: Int) => a < b, (x: Int, max: Int, numBuckets: Int) => (x * numBuckets) / (max + 1), 0, 0)
+    assertEquals(sortedArr, List.empty[Int])
+  }
+
+  // Tests for BucketSortGeneric Doubles
+
+  test("bucketSortGeneric - Positive Test 1: Desordenado positivo") {
+    val arr = List(5.0, 2.0, 9.0, 3.0, 7.0, 1.0, 4.0, 8.0, 6.0)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Double, b: Double) => a < b, (x: Double, max: Double, numBuckets: Int) => ((x * numBuckets) / (max + 1)).toInt, 9.0, 1.0)
+    assertEquals(sortedArr, List(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0))
+  }
+
+  test("bucketSortGeneric - Positive Test 2: Desordenado negativo") {
+    val arr = List(-5.0, -2.0, -9.0, -3.0, -7.0, -1.0, -4.0, -8.0, -6.0)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Double, b: Double) => a < b, (x: Double, max: Double, numBuckets: Int) => (((x - max) * numBuckets) / (1 - max)).toInt, -1.0, -9.0)
+    assertEquals(sortedArr, List(-9.0, -8.0, -7.0, -6.0, -5.0, -4.0, -3.0, -2.0, -1.0))
+  }
+
+  test("bucketSortGeneric - Positive Test 3: Ordenado positivo") {
+    val arr = List(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Double, b: Double) => a < b, (x: Double, max: Double, numBuckets: Int) => ((x * numBuckets) / (max + 1)).toInt, 9.0, 1.0)
+    assertEquals(sortedArr, List(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0))
+  }
+
+  test("bucketSortGeneric - Positive Test 4: Ordenado negativo") {
+    val arr = List(-1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0, -9.0)
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Double, b: Double) => a < b, (x: Double, max: Double, numBuckets: Int) => (((x - max) * numBuckets) / (1 - max)).toInt, -1.0, -9.0)
+    assertEquals(sortedArr, List(-9.0, -8.0, -7.0, -6.0, -5.0, -4.0, -3.0, -2.0, -1.0))
+  }
+
+  test("bucketSortGeneric - Positive Test 5: Lista vacía") {
+    val arr = List.empty[Double]
+    val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Double, b: Double) => a < b, (x: Double, max: Double, numBuckets: Int) => ((x * numBuckets) / (max + 1)).toInt, 0.0, 0.0)
+    assertEquals(sortedArr, List.empty[Double])
+  }
+
+
+
+
 
   /*
   test("BucketSort with unordered positive numbers") {
