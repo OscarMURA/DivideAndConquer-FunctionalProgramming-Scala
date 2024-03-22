@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f252319-9137-43b1-8269-a173fe02d364" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/workshop/InterfaceWorkshop3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/workshop/InterfaceWorkshop3.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/workshop/Workshop3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/workshop/Workshop3.scala" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 8de0bda91e6b2e2dcb6246599fe9b34b77bad74a
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,17 +33,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hello" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hello" type="f1a62948:ProjectNode" />
-                <item name="hello" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hello" type="f1a62948:ProjectNode" />
-                <item name="hello-build" type="2d1252cf:ModuleNode" />
+                <item name="ti1-2024-1-e5-sopas" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -77,10 +72,20 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
+=======
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;MUnit.Workshop1Test.executor&quot;: &quot;Run&quot;,
+>>>>>>> 8de0bda91e6b2e2dcb6246599fe9b34b77bad74a
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+<<<<<<< HEAD
+=======
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chamo/Videos/ti1-2024-1-e5-sopas&quot;,
+>>>>>>> 8de0bda91e6b2e2dcb6246599fe9b34b77bad74a
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -88,6 +93,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+<<<<<<< HEAD
   <component name="RunManager" selected="MUnit.Workshop1Test">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ti1-2024-1-e5-sopas-build" />
@@ -102,6 +108,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager">
+>>>>>>> 8de0bda91e6b2e2dcb6246599fe9b34b77bad74a
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="ti1-2024-1-e5-sopas-build" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,139 +140,6 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="ti1-2024-1-e5-sopas-build" />
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop1Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="integradoras.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Class" />
-      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop1Test" />
-      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop2Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Class" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop2Test" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop2Test.lowerList - Positive Test 12" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop2Test" />
-      <option name="testName" value="lowerList - Positive Test 12" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 11" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop2Test" />
-      <option name="testName" value="updatedQuickSort - Positive Test 11" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 12" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop2Test" />
-      <option name="testName" value="updatedQuickSort - Positive Test 12" />
-      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -328,13 +204,158 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ti1-2024-1-e5-sopas-build" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ti1-2024-1-e5-sopas-build" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Workshop1Test (1)" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Trabajos.integradoras.ti1-2024-1-e5-sopas.hello" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
+      <option name="testClassPath" value="Workshop1Test" />
+      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Workshop1Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="integradoras.ti1-2024-1-e5-sopas.hello" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
+      <option name="testClassPath" value="Workshop1Test" />
+      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Workshop2Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <option name="testClassPath" value="Workshop2Test" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 11" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <option name="testClassPath" value="Workshop2Test" />
+      <option name="testName" value="updatedQuickSort - Positive Test 11" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Workshop2Test.updatedQuickSort - Positive Test 12" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Discretas.ti1-2024-1-e5-sopas.hello" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <option name="testClassPath" value="Workshop2Test" />
+      <option name="testName" value="updatedQuickSort - Positive Test 12" />
+      <option name="workingDirectory" value="C:\Users\luism\Documents\Study\Discretas\ti1-2024-1-e5-sopas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="MUnit.Workshop1Test" />
+        <item itemvalue="MUnit.Workshop1Test (1)" />
         <item itemvalue="MUnit.Workshop2Test" />
         <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 12" />
         <item itemvalue="MUnit.Workshop2Test.updatedQuickSort - Positive Test 11" />
-        <item itemvalue="MUnit.Workshop2Test.lowerList - Positive Test 12" />
       </list>
     </recent_temporary>
   </component>

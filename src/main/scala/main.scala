@@ -6,7 +6,7 @@ import scala.jdk.CollectionConverters.*
 @main
 def main(): Unit = {
   println("Hello world!")
-  // Ejemplo de uso
+  // Example of use
   val fileManager = new FileManager
   // Cargar archivo y mostrar su contenido
   val loadPath = "C:\\Users\\Oscar Muñoz\\Documents\\4 Semestre\\Integradoras\\ti1-2024-1-e5-sopas\\data_500000.txt"
@@ -24,4 +24,7 @@ def main(): Unit = {
       sortedData.foreach(println)
     case None => println("Failed to load the file")
   }
+
 }
+
+

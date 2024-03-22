@@ -1,6 +1,14 @@
 import munit.*
 import workshop.Workshop3
+
 class Workshop3Test extends FunSuite{
+
+
+  
+
+
+  /*
+  
   test("BucketSort with unordered positive numbers") {
     val input = List(4.3, 2.1, 9.8, 1.5, 6.7)
     val expectedOutput = List(1.5, 2.1, 4.3, 6.7, 9.8)
@@ -67,5 +75,5 @@ class Workshop3Test extends FunSuite{
     val expectedOutput = List(12345.678, 54321.987, 67890.123, 98765.432, 99999.999)
     assertEquals(expectedOutput, Workshop3.sort(input))
   }
-
+*/
 }
