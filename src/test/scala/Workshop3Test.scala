@@ -4,11 +4,50 @@ import workshop.Workshop3
 class Workshop3Test extends FunSuite{
 
 
-  
+  /**
+   * The comparedAlphanumeric function is a recursive
+   * function that compares two strings `str1` and `str2`
+   * character by character in an alphanumeric manner.
+   * It starts comparing characters at the specified index
+   * (default is 0) and recursively moves to the next character
+   * if the current characters are equal.
+  */
+  def comparedAlphanumeric(str1: String, str2: String, index: Int = 0): Boolean = {
+    if (index >= str1.length || index >= str2.length) {
+      return str1.length < str2.length
+    }
+    val char1 = str1.charAt(index)
+    val char2 = str2.charAt(index)
+    if (char1 != char2) {
+      return char1 < char2
+    } else {
+      return comparedAlphanumeric(str1, str2, index + 1)
+    }
+  }
 
+  /**
+   * The `comparedChar` function is a simple comparison function that
+   * takes two characters `c1` and `c2` as input parameters and returns
+   * a boolean value based on the comparison result of these characters.
+  */
+  def comparedChar(c1: Char, c2: Char): Boolean = {
+    c1 < c2
+  }
+
+  /**
+   * The `comparedStringSize` function you provided seems to be a comparison
+   * function that takes two strings `x` and `head` as input parameters.
+   * It checks if the length of string `x` is less than or equal to the
+   * length of string `head` and returns a boolean value based on this comparison.
+  */
+  def comparedStringSize(x:String, head:String):Boolean={
+    x.length <= head.length
+  }
+
+
+ 
 
   /*
-  
   test("BucketSort with unordered positive numbers") {
     val input = List(4.3, 2.1, 9.8, 1.5, 6.7)
     val expectedOutput = List(1.5, 2.1, 4.3, 6.7, 9.8)
