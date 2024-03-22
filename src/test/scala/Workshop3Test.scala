@@ -1,9 +1,7 @@
 import munit.*
-import workshop.Workshop3
+import workshop.{FileManager, Workshop3}
 
 class Workshop3Test extends FunSuite{
-
-
   test("bucketSortGeneric - Positive Test 1: Unordered list of positive numbers") {
     val arr = List(5, 2, 9, 3, 7, 1, 4, 8, 6)
     val sortedArr = Workshop3.bucketSortGeneric(arr, (a: Int, b: Int) => a < b, (x: Int, max: Int, numBuckets: Int) => (x * numBuckets) / (max + 1), 9, 1)
@@ -67,8 +65,6 @@ class Workshop3Test extends FunSuite{
   }
 
 
-
-
   /**
    * The comparedAlphanumeric function is a recursive
    * function that compares two strings `str1` and `str2`
@@ -77,17 +73,21 @@ class Workshop3Test extends FunSuite{
    * (default is 0) and recursively moves to the next character
    * if the current characters are equal.
    */
-  def comparedAlphanumeric(str1: String, str2: String, index: Int = 0): Boolean = {
-    if (index >= str1.length || index >= str2.length) {
-      return str1.length < str2.length
+  def comparedAlphanumeric(str1: String, str2: String):Boolean={
+    def compared(str1: String, str2: String, index: Int = 0): Boolean = {
+      if (index >= str1.length || index >= str2.length) {
+        return str1.length < str2.length
+      }
+      val char1 = str1.charAt(index)
+      val char2 = str2.charAt(index)
+      if (char1 != char2) {
+        return char1 < char2
+      } else {
+        return compared(str1, str2, index + 1)
+      }
+
     }
-    val char1 = str1.charAt(index)
-    val char2 = str2.charAt(index)
-    if (char1 != char2) {
-      return char1 < char2
-    } else {
-      return comparedAlphanumeric(str1, str2, index + 1)
-    }
+    compared(str1,str2,0)
   }
 
   /**
@@ -109,74 +109,141 @@ class Workshop3Test extends FunSuite{
     x.length <= head.length
   }
 
+  test("bucketSortGeneric - Positive Test 1: BucketSort with unordered character") {
+    val input:List[Char]=List('z','x','p','l','i','f','d','e','i','a')
+    val expectedOutput:List[Char]=List('a', 'd', 'e', 'f', 'i', 'i', 'l', 'p', 'x', 'z')
+    val result:List[Char]=Workshop3.bucketSortGeneric(input,comparedChar, (value: Char, maxVal: Char, numBuckets: Int) => {
+      val interval = (maxVal - 'a' + 1).toDouble / numBuckets.toDouble
+      ((value - 'a').toDouble / interval).toInt
+    },input.max,input.min)
+    assertEquals(result,expectedOutput)
 
-
-  /*
-  test("BucketSort with unordered positive numbers") {
-    val input = List(4.3, 2.1, 9.8, 1.5, 6.7)
-    val expectedOutput = List(1.5, 2.1, 4.3, 6.7, 9.8)
-    assertEquals(expectedOutput, Workshop3.sort(input))
   }
 
-  test("BucketSort with unordered negative and positive numbers") {
-    val input = List(-3.2, 5.7, -1.1, 8.9, 0.5)
-    val expectedOutput = List(-3.2, -1.1, 0.5, 5.7, 8.9)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 2:BucketSort with character sorted from last to first (alphabet order)") {
+    val input = List('z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q')
+    val expectedOutput = List('q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+    val result = Workshop3.bucketSortGeneric(input, comparedChar, (value: Char, maxVal: Char, numBuckets: Int) => {
+      val interval = (maxVal - 'a' + 1).toDouble / numBuckets.toDouble
+      ((value - 'a').toDouble / interval).toInt
+    }, input.max, input.min)
+    assertEquals(result, expectedOutput)
   }
 
-  test("BucketSort with list containing duplicates") {
-    val input = List(3.2, 1.5, 3.2, 2.1, 2.1)
-    val expectedOutput = List(1.5, 2.1, 2.1, 3.2, 3.2)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 3: BucketSort with unordered number character") {
+    val input :List[Char]= List('5', '9', '0',  '3', '7', '6', '1', '8', '4')
+    val expectedOutput:List[Char] = List( '0', '1', '3', '4', '5', '6', '7', '8', '9')
+    val result:List[Char] = Workshop3.bucketSortGeneric(input, comparedChar, (value: Char, maxVal: Char, numBuckets: Int) => {
+      val interval = (maxVal - ' ' + 1).toDouble / numBuckets.toDouble
+      ((value - ' ').toDouble / interval).toInt
+    }, input.max, input.min)
+    assertEquals(result, expectedOutput)
   }
 
-  test("BucketSort with empty list") {
-    val input = List[Double]()
-    val expectedOutput = List[Double]()
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 4: BucketSort with numerical character sorted in descending order") {
+    val input:List[Char] = List('9', '8', '7', '6', '5', '4', '3', '1', '0', ' ')
+    val expectedOutput:List[Char] = List(' ', '0', '1', '3', '4', '5', '6', '7', '8', '9')
+    val result:List[Char] = Workshop3.bucketSortGeneric(input, comparedChar, (value: Char, maxVal: Char, numBuckets: Int) => {
+      val interval = (maxVal - ' ' + 1).toDouble / numBuckets.toDouble
+      ((value - ' ').toDouble / interval).toInt
+    }, input.max, input.min)
+    assertEquals(result, expectedOutput)
   }
 
-  test("BucketSort with single element list") {
-    val input = List(10.0)
-    val expectedOutput = List(10.0)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 5: BucketSort with character and char of numbers in disorder") {
+    val input:List[Char] = List('e', '7', 'c', '5', 'a', '4', 'b', '3', 'd', '2')
+    val expectedOutput:List[Char] = List('2', '3', '4', '5', '7', 'a', 'b', 'c', 'd', 'e')
+    val result:List[Char] = Workshop3.bucketSortGeneric(input, comparedChar, (value: Char, maxVal: Char, numBuckets: Int) => {
+      val interval = (maxVal - ' ' + 1).toDouble / numBuckets.toDouble
+      ((value - ' ').toDouble / interval).toInt
+    }, input.max, input.min)
+    assertEquals(result, expectedOutput)
   }
 
-  test("BucketSort with already sorted list") {
-    val input = List(1.0, 2.0, 3.0, 4.0, 5.0)
-    val expectedOutput = List(1.0, 2.0, 3.0, 4.0, 5.0)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 6: BucketSort with an empty list char"){
+    val input:List[Char] = List()
+    val expectedOutput:List[Char] = List()
+    val result:List[Char] = Workshop3.bucketSortGeneric(input, comparedChar, (value: Char, maxVal: Char, numBuckets: Int) => {
+      val interval = (maxVal - ' ' + 1).toDouble / numBuckets.toDouble
+      ((value - ' ').toDouble / interval).toInt
+    }, ' ', ' ')
+    assertEquals(result, expectedOutput)
   }
 
-  test("BucketSort with reverse order list") {
-    val input = List(5.0, 4.0, 3.0, 2.0, 1.0)
-    val expectedOutput = List(1.0, 2.0, 3.0, 4.0, 5.0)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 1: BucketSort with an unordered list of strings of different sizes") {
+    val input: List[String] = List("elephant", "banana", "kiwi", "orange", "pear", "apple")
+    val expectedOutput: List[String] =  List("pear", "kiwi", "apple", "orange", "banana", "elephant")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedStringSize,
+      (head: String, maxVal: String, size: Int) => Math.min((head.length / maxVal.length * (size - (0.4))).toInt, size - 1)
+      , input.max, input.min)
+    assertEquals(result, expectedOutput)
   }
 
-  test("BucketSort with unordered positive and negative numbers") {
-    val input = List(4.3, -2.1, 9.8, -1.5, 6.7)
-    val expectedOutput = List(-2.1, -1.5, 4.3, 6.7, 9.8)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 2: BucketSort with a sorted list from largest to smallest of strings of different sizes") {
+    val input: List[String] = List("watermelons", "elephants", "oranges",   "banana", "apple", "grap", "man", "hi")
+    val expectedOutput: List[String] =  List("hi", "man", "grap", "apple", "banana", "oranges", "elephants", "watermelons")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedStringSize,
+      (head: String, maxVal: String, size: Int) => Math.min((head.length / maxVal.length * (size - (0.5))).toInt, size - 1)
+      , input.max, input.min)
+    assertEquals(result, expectedOutput)
   }
 
-  test("BucketSort with all elements equal") {
-    val input = List(3.5, 3.5, 3.5, 3.5, 3.5)
-    val expectedOutput = List(3.5, 3.5, 3.5, 3.5, 3.5)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 3: BucketSort with a list of one-item strings"){
+    val input:List[String]= List("klmnopqrst")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedStringSize,
+      (value: String, maxVal: String, numBuckets: Int) => {
+        val interval = maxVal.length / numBuckets.toDouble
+        Math.min((value.length / interval).toInt, numBuckets - 1)
+      }, input.max, input.min)
+    assertEquals(result, input)
   }
 
-  test("BucketSort with repeated and mixed order") {
-    val input = List(5.7, 2.1, 5.7, 3.2, 2.1, 8.9)
-    val expectedOutput = List(2.1, 2.1, 3.2, 5.7, 5.7, 8.9)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 1: BucketSort with an unordered string list for alphanumeric sorting") {
+    val input: List[String] = List("watermelons", "elephants", "oranges", "banana", "apple", "grap", "man", "hi")
+    val expectedOutput: List[String] = List("apple", "banana", "elephants", "grap", "hi", "man", "oranges", "watermelons")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedAlphanumeric,
+      (head: String, maxVal: String, size: Int) => Math.min((head.length / maxVal.length * (size - (0.5))).toInt, size - 1)
+      , input.max, input.min)
+    assertEquals(result, expectedOutput)
+  }
+
+  test("bucketSortGeneric - Positive Test 2: BucketSort with a list of strings sorted from order z to \"a\" to sort alphabetically") {
+    val input: List[String] = List("watermelons", "oranges", "man", "hi", "grap", "elephants", "banana", "apple")
+    val expectedOutput: List[String] = List("apple", "banana", "elephants", "grap", "hi", "man", "oranges", "watermelons")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedAlphanumeric,
+      (head: String, maxVal: String, size: Int) => Math.min((head.length / maxVal.length * (size - (0.5))).toInt, size - 1)
+      , input.max, input.min)
+    assertEquals(result, expectedOutput)
+  }
+
+  test("bucketSortGeneric - Positive Test 3: BucketSort with an unordered list of letter strings") {
+    val input: List[String] =  List("z", "x", "p", "l", "i", "f", "d", "e", "a", "c")
+    val expectedOutput: List[String] = List("a", "c", "d", "e", "f", "i", "l", "p", "x", "z")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedAlphanumeric,
+      (head: String, maxVal: String, size
+      : Int) => Math.min((head.length / maxVal.length * (size - (0.5))).toInt, size - 1)
+      , input.max, input.min)
+    assertEquals(result, expectedOutput)
+  }
+
+  test("bucketSortGeneric - Positive Test 4: BucketSort with an unordered list of number strings") {
+    val input: List[String] = List("9", "5", "2", "7", "3", "1", "8", "6", "4", "0")
+    val expectedOutput: List[String] =  List("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedAlphanumeric,
+      (head: String, maxVal: String, size: Int) => Math.min((head.length / maxVal.length * (size - (0.5))).toInt, size - 1)
+      , input.max, input.min)
+    assertEquals(result, expectedOutput)
   }
 
 
-  test("BucketSort with high precision floating point numbers") {
-    val input = List(99999.999, 12345.678, 54321.987, 98765.432, 67890.123)
-    val expectedOutput = List(12345.678, 54321.987, 67890.123, 98765.432, 99999.999)
-    assertEquals(expectedOutput, Workshop3.sort(input))
+  test("bucketSortGeneric - Positive Test 5: BucketSort with an unordered string list of numbers and words") {
+    val input: List[String] = List("kiwi", "789", "grape", "456", "123", "epa", "orange", "234", "apple", "567")
+    val expectedOutput: List[String] = List("123", "234", "456", "567", "789", "apple", "epa", "grape", "kiwi", "orange")
+    val result: List[String] = Workshop3.bucketSortGeneric(input, comparedAlphanumeric,
+      (value: String, maxVal: String, numBuckets: Int) => {
+        val interval = (maxVal.hashCode()).toDouble / numBuckets.toDouble
+        Math.min( ((value.hashCode()).toDouble / interval).toInt,numBuckets-1)}, "zzzzzz", input.min)
+    assertEquals(result, expectedOutput)
   }
-*/
+
 }

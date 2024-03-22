@@ -7,5 +7,5 @@ trait InterfaceWorkshop1 {
   def merge(left: List[Int], right: List[Int], count: Int): (List[Int], Int)
 
   def mergeSort(list: List[Int]): (List[Int], Int)
-  
+
 }
