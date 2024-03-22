@@ -26,4 +26,4 @@ Por hipótesis inductiva para $k_1, k_2, k_3 \leq n$, $QSThree$ no efectúa erro
 
 Sucediendo lo anterior para todas las llamadas recursivas hasta que la lista quede completamente ordenada
 
-Quedando así demostrado por inducción que algoritmo $QSThree(A,n)$ es valido para para todo n greater than or equal to 2
+Quedando así demostrado por inducción que algoritmo $QSThree(A,n)$ es valido para para todo n mayor o igual to 2
