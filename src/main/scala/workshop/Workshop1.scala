@@ -4,7 +4,7 @@ package workshop
  * Objeto que contiene funciones para realizar la ordenación de listas
  * y contar inversiones.
  */
-object Workshop1 {
+object Workshop1 extends InterfaceWorkshop1 {
 
   /**
    * Combina dos listas ordenadas en una sola lista ordenada y cuenta las inversiones.
