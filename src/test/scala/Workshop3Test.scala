@@ -1,5 +1,5 @@
 import munit.*
-import workshop.{FileManager, Workshop3}
+import workshop.Workshop3
 
 /**
  * Clase que contiene pruebas para el método `bucketSortGeneric` de la clase `Workshop3`.
