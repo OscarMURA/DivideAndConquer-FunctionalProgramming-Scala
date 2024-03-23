@@ -3,20 +3,20 @@ package workshop
 import scala.annotation.tailrec
 
 /**
- * Objeto que proporciona funciones para realizar operaciones relacionadas con el algoritmo de ordenación Bucket Sort.
+ * Object that provides functions to perform operations related to the Bucket Sort algorithm.
  */
 object Workshop3 extends InterfaceWorkshop3 {
 
   /**
-   * Implementación genérica del algoritmo de ordenación Bucket Sort.
+   * Generic implementation of the Bucket Sort algorithm.
    *
-   * @param arr               Lista de elementos a ordenar.
-   * @param function          Función de comparación para ordenar los elementos.
-   * @param functionInterval  Función para calcular el intervalo de cada elemento en los buckets.
-   * @param maxValue          Valor máximo posible en la lista.
+   * @param arr               List of items to be ordered.
+   * @param function          Comparison function to sort the elements.
+   * @param functionInterval  Function to calculate the interval of each element in the buckets.
+   * @param maxValue          Maximum possible value in the list.
    * @param minValue          Valor mínimo posible en la lista.
-   * @tparam T                Tipo de elementos en la lista.
-   * @return                  Lista ordenada.
+   * @tparam T                Type of items in the list.
+   * @return                  Ordered list.
    */
   def bucketSortGeneric[T](
                             arr: List[T],
@@ -27,10 +27,10 @@ object Workshop3 extends InterfaceWorkshop3 {
                           ): List[T] = {
 
     /**
-     * Función interna que realiza el ordenamiento Merge Sort.
+     * Internal function that performs the Merge Sort.
      *
-     * @param list  Lista de elementos a ordenar.
-     * @return      Lista ordenada.
+     * @param list  List of items to be ordered.
+     * @return      Ordered list.
      */
     def mergeSort(list: List[T]): List[T] = {
       @tailrec
@@ -49,16 +49,16 @@ object Workshop3 extends InterfaceWorkshop3 {
       }
     }
 
-    // Verifica si la lista está vacía
+    // Check if the list is empty
     if (arr.isEmpty) return List[T]()
 
     /**
-     * Función interna que divide los elementos en los buckets correspondientes.
+     * Internal function that divides the elements into the corresponding buckets.
      *
-     * @param arr       Lista de elementos a dividir en buckets.
-     * @param buckets   Lista de buckets.
-     * @param maxVal    Valor máximo en la lista.
-     * @return          Lista de buckets con los elementos divididos.
+     * @param arr       List of elements to be divided into buckets.
+     * @param buckets   List of buckets.
+     * @param maxVal    Maximum value in the list.
+     * @return          List of buckets with divided elements.
      */
     def divideIntoBuckets(arr: List[T], buckets: List[List[T]], maxVal: T): List[List[T]] = arr match {
       case Nil => buckets
@@ -68,7 +68,7 @@ object Workshop3 extends InterfaceWorkshop3 {
         divideIntoBuckets(tail, newBuckets, maxVal)
     }
 
-    // Inicialización de variables
+    // Initialization of variables
     val maxVal: T = maxValue
     val numBuckets = arr.length
     val buckets: List[List[T]] = List.fill(numBuckets)(Nil)

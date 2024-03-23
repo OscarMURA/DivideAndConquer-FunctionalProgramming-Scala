@@ -1,18 +1,18 @@
 package workshop
 
 /**
- * Objeto que contiene funciones para realizar la ordenación de listas
- * y contar inversiones.
+ * Object containing functions for sorting lists
+ * and counting investments.
  */
 object Workshop1 extends InterfaceWorkshop1 {
 
   /**
-   * Combina dos listas ordenadas en una sola lista ordenada y cuenta las inversiones.
+   * Combines two sorted lists into a single sorted list and counts the investments.
    *
-   * @param left  La primera lista a combinar.
-   * @param right La segunda lista a combinar.
-   * @param count El número de inversiones hasta el momento.
-   * @return Una tupla que contiene la lista combinada y el número de inversiones.
+   * @param left  The first list to combine.
+   * @param right The second list to combine.
+   * @param count The number of investments to date.
+   * @return A tuple containing the combined list and the number of investments.
    */
   def merge(left: List[Int], right: List[Int], count: Int): (List[Int], Int) = (left, right) match {
     case (Nil, right) => (right, count)
@@ -28,10 +28,10 @@ object Workshop1 extends InterfaceWorkshop1 {
   }
 
   /**
-   * Ordena una lista y cuenta el número de inversiones utilizando el algoritmo de Merge Sort.
+   * Sort a list and count the number of inversions using the Merge Sort algorithm.
    *
-   * @param list La lista de enteros a ordenar.
-   * @return Una tupla que contiene la lista ordenada y el número de inversiones.
+   * @param list The list of integers to sort.
+   * @return A tuple containing the ordered list and the number of investments.
    */
   def mergeSort(list: List[Int]): (List[Int], Int) = {
     val n = list.length / 2
@@ -46,15 +46,15 @@ object Workshop1 extends InterfaceWorkshop1 {
   }
 
   /**
-   * Cuenta el número de inversiones en una lista utilizando el algoritmo de Merge Sort.
+   * Count the number of investments in a list using the Merge Sort algorithm.
    *
-   * @param list La lista de enteros en la que contar las inversiones.
-   * @return El número de inversiones en la lista.
+   * @param list The list of integers in which to count the investments.
+   * @return The number of investments in the list.
    */
   def countInversions(list: List[Int]): Int = {
     val (_, inversions) = mergeSort(list)
-    // no se asigna el primer retorno del mergesort (la lista ordenada)
-    // se asigna el segundo retorno (cantidad de inversiones) a la variable inversions
+    // do not assign the first return of the mergesort (the ordered list)
+    // the second return (number of inversions) is assigned to the variable inversions
     inversions
   }
 

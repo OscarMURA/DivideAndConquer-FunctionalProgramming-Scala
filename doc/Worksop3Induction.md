@@ -33,7 +33,7 @@ To demonstrate that the function is valid for $k+1$ elements, we consider a list
 
 Therefore, for $k+1$ elements:
 
-$F(k+1$) = $divideIntoCubes(head::tail, cubes, maxVal) = divideIntoCubes(head, newCubes, maxVal)$
+$F(k+1)$ = $divideIntoCubes(head::tail, cubes, maxVal) = divideIntoCubes(head, newCubes, maxVal)$
 
 Where:
 
