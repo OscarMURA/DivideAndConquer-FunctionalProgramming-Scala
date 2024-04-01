@@ -1,5 +1,7 @@
 package workshop
 
+import scala.annotation.tailrec
+
 /**
  * Objeto que contiene funciones para realizar la ordenación de listas
  * y contar inversiones.
@@ -7,55 +9,53 @@ package workshop
 object Workshop1 {
 
   /**
-   * Combina dos listas ordenadas en una sola lista ordenada y cuenta las inversiones.
+   * Combines two sorted lists into a single sorted list and counts inversions.
    *
-   * @param left  La primera lista a combinar.
-   * @param right La segunda lista a combinar.
-   * @param count El número de inversiones hasta el momento.
-   * @return Una tupla que contiene la lista combinada y el número de inversiones.
+   * @param left  The first list to combine.
+   * @param right The second list to combine.
+   * @param cmp   The comparison function to determine the order of elements.
+   * @return A tuple containing the combined sorted list and the number of inversions.
    */
-  def merge(left: List[Int], right: List[Int], count: Int): (List[Int], Int) = (left, right) match {
-    case (Nil, right) => (right, count)
-    case (left, Nil) => (left, count)
+  def merge(left: List[Int], right: List[Int], cmp: (Int, Int) => Boolean): (List[Int], Int) = (left, right) match {
+    case (Nil, r) => (r, 0)
+    case (l, Nil) => (l, 0)
     case (leftHead :: leftTail, rightHead :: rightTail) =>
-      if (leftHead <= rightHead) {
-        val (merged, inversions) = merge(leftTail, right, count)
+      if (cmp(leftHead, rightHead)) {
+        val (merged, inversions) = merge(leftTail, right, cmp)
         (leftHead :: merged, inversions)
       } else {
-        val (merged, inversions) = merge(left, rightTail, count + left.length)
-        (rightHead :: merged, inversions)
+        val (merged, inversions) = merge(left, rightTail, cmp)
+        (rightHead :: merged, left.length + inversions)
       }
   }
 
   /**
-   * Ordena una lista y cuenta el número de inversiones utilizando el algoritmo de Merge Sort.
+   * Sorts a list and counts the number of inversions using the Merge Sort algorithm.
    *
-   * @param list La lista de enteros a ordenar.
-   * @return Una tupla que contiene la lista ordenada y el número de inversiones.
+   * @param list The list of integers to sort.
+   * @param cmp  The comparison function to determine the order of elements.
+   * @return A tuple containing the sorted list and the number of inversions.
    */
-  def mergeSort(list: List[Int]): (List[Int], Int) = {
+  def mergeSort(list: List[Int], cmp: (Int, Int) => Boolean): (List[Int], Int) = {
     val n = list.length / 2
     if (n == 0) (list, 0)
     else {
       val (left, right) = list.splitAt(n)
-      val (sortedLeft, leftInversions) = mergeSort(left)
-      val (sortedRight, rightInversions) = mergeSort(right)
-      val (merged, splitInversions) = merge(sortedLeft, sortedRight, 0)
+      val (sortedLeft, leftInversions) = mergeSort(left, cmp)
+      val (sortedRight, rightInversions) = mergeSort(right, cmp)
+      val (merged, splitInversions) = merge(sortedLeft, sortedRight, cmp)
       (merged, leftInversions + rightInversions + splitInversions)
     }
   }
 
   /**
-   * Cuenta el número de inversiones en una lista utilizando el algoritmo de Merge Sort.
+   * Counts the number of inversions in a list using the Merge Sort algorithm.
    *
-   * @param list La lista de enteros en la que contar las inversiones.
-   * @return El número de inversiones en la lista.
+   * @param list The list of integers to count inversions in.
+   * @return The number of inversions in the list.
    */
   def countInversions(list: List[Int]): Int = {
-    val (_, inversions) = mergeSort(list)
-    // no se asigna el primer retorno del mergesort (la lista ordenada)
-    // se asigna el segundo retorno (cantidad de inversiones) a la variable inversions
-    inversions
+    mergeSort(list, (x, y) => x <= y)._2
   }
 
 }
