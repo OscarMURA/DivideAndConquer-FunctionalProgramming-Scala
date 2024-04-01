@@ -3,13 +3,13 @@ import workshop.Workshop2
 import scala.collection.immutable.List
 
 /**
- * Clase de prueba para la clase Workshop2.
+ * Test class for the Workshop2 class.
  */
 class Workshop2Test extends FunSuite {
 
   // Tests for equalList method
   /**
-   * Prueba para el método equalList con una lista que contiene el valor proporcionado como pivote.
+   * Test for the equalList method with a list containing the value provided as a pivot.
    */
   test("equalList - Positive Test 1") {
     val result = Workshop2.equalList(List(1, 2, 3), 2)
@@ -17,7 +17,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que contiene múltiples instancias del valor proporcionado como pivote.
+   * Test for the equalList method with a list containing multiple instances of the value provided as a pivot.
    */
   test("equalList - Positive Test 2") {
     val result = Workshop2.equalList(List(5, 5, 5, 5), 5)
@@ -25,7 +25,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que no contiene el valor proporcionado como pivote.
+   * Test for the equalList method with a list that does not contain the value provided as a pivot.
    */
   test("equalList - Positive Test 3") {
     val result = Workshop2.equalList(List(1, 2, 3), 4)
@@ -33,7 +33,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista vacía.
+   * Test for the equalList method with an empty list.
    */
   test("equalList - Positive Test 4") {
     val result = Workshop2.equalList(List(), 5)
@@ -41,7 +41,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que no contiene el valor proporcionado como pivote.
+   * Test for the equalList method with a list that does not contain the value provided as a pivot.
    */
   test("equalList - Positive Test 5") {
     val result = Workshop2.equalList(List(5, 6, 7, 8), 1)
@@ -50,7 +50,7 @@ class Workshop2Test extends FunSuite {
 
   // Tests for equalList method with negative numbers
   /**
-   * Prueba para el método equalList con una lista que contiene el valor proporcionado como pivote (números negativos).
+   * Test for the equalList method with a list containing negative numbers.
    */
   test("equalList - Positive Test 6") {
     val result = Workshop2.equalList(List(-1, -2, -3), -2)
@@ -58,7 +58,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que contiene múltiples instancias del valor proporcionado como pivote (números negativos).
+   * Test for the equalList method with a list containing multiple instances of the value provided as a pivot (negative numbers).
    */
   test("equalList - Positive Test 7") {
     val result = Workshop2.equalList(List(-5, -5, -5, -5), -5)
@@ -66,7 +66,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que no contiene el valor proporcionado como pivote (números negativos).
+   * Test for the equalList method with a list that does not contain the value provided as a pivot (negative numbers).
    */
   test("equalList - Positive Test 8") {
     val result = Workshop2.equalList(List(-1, -2, -3), -4)
@@ -74,7 +74,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista vacía (números negativos).
+   * Test for the equalList method with an empty list.
    */
   test("equalList - Positive Test 9") {
     val result = Workshop2.equalList(List(), -5)
@@ -82,7 +82,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que no contiene el valor proporcionado como pivote (números negativos).
+   * Test for the equalList method with a list that does not contain the value provided as a pivot (negative numbers).
    */
   test("equalList - Positive Test 10") {
     val result = Workshop2.equalList(List(-5, -6, -7, -8), -1)
@@ -90,7 +90,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que contiene tanto números positivos como negativos.
+   * Test for the equalList method with a list containing negative and positive numbers, where the pivot is 0.
    */
   test("equalList - Positive Test 11") {
     val result = Workshop2.equalList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 0)
@@ -98,7 +98,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista que no contiene el valor proporcionado como pivote.
+   * Test for the equalList method with a list that does not contain the value provided as a pivot.
    */
   test("equalList - Positive Test 12") {
     val result = Workshop2.equalList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 6)
@@ -107,7 +107,7 @@ class Workshop2Test extends FunSuite {
 
   // Tests for greaterList method
   /**
-   * Prueba para el método greaterList con una lista que contiene elementos mayores que el pivote.
+   * Test for the greaterList method with a list containing elements greater than the pivot.
    */
   test("greaterList - Positive Test 1") {
     val result = Workshop2.greaterList(List(1, 2, 3), 2)
@@ -115,7 +115,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista de números iguales.
+   * Test for the equalList method with a list of equal numbers.
    */
   test("equalList - Positive Test 2") {
     val result = Workshop2.equalList(List(5, 5, 5, 5), 5)
@@ -123,7 +123,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista de números sin igual al pivote.
+   * Test for the equalList method with a list of numbers not equal to the pivot.
    */
   test("equalList - Positive Test 3") {
     val result = Workshop2.equalList(List(1, 2, 3), 4)
@@ -131,7 +131,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista vacía.
+   * Test for the equalList method with an empty list.
    */
   test("equalList - Positive Test 4") {
     val result = Workshop2.equalList(List(), 5)
@@ -139,17 +139,17 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método equalList con una lista sin igual al pivote.
+   * Test for the equalList method with a list not equal to the pivot.
    */
   test("equalList - Positive Test 5") {
     val result = Workshop2.equalList(List(5, 6, 7, 8), 1)
     assertEquals(result, Nil)
   }
 
-  // Tests para el método greaterList
+  // Tests for the greaterList method
 
   /**
-   * Prueba para el método greaterList con una lista de números positivos.
+   * Test for the greaterList method with a list of positive numbers.
    */
   test("greaterList - Positive Test 1") {
     val result = Workshop2.greaterList(List(1, 2, 3), 2)
@@ -157,7 +157,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método greaterList con una lista de números iguales al pivote.
+   * Test for the method greaterList with a list of numbers equal to the pivot.
    */
   test("greaterList - Positive Test 2") {
     val result = Workshop2.greaterList(List(5, 5, 5, 5), 4)
@@ -165,7 +165,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método greaterList con una lista de números menores al pivote.
+   * Test for the greaterList method with a list of numbers less than the pivot number.
    */
   test("greaterList - Positive Test 3") {
     val result = Workshop2.greaterList(List(1, 2, 3), 0)
@@ -173,7 +173,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método greaterList con una lista vacía.
+   * Test for the greaterList method with an empty list.
    */
   test("greaterList - Positive Test 4") {
     val result = Workshop2.greaterList(List(), 5)
@@ -181,17 +181,17 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método greaterList con una lista de números mayores al pivote.
+   * Test for the greaterList method with a list of numbers larger than the pivot.
    */
   test("greaterList - Positive Test 5") {
     val result = Workshop2.greaterList(List(5, 6, 7, 8), 1)
     assertEquals(result, List(5, 6, 7, 8))
   }
 
-  // Tests para el método lowerList
+  // Tests for the lowerList method
 
   /**
-   * Prueba para el método lowerList con una lista de números positivos.
+   * Test for the lowerList method with a list of positive numbers.
    */
   test("lowerList - Positive Test 1") {
     val result = Workshop2.lowerList(List(1, 2, 3), 2)
@@ -199,7 +199,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista de números iguales al pivote.
+   * Test for the lowerList method with a list of numbers equal to the pivot.
    */
   test("lowerList - Positive Test 2") {
     val result = Workshop2.lowerList(List(5, 5, 5, 5), 6)
@@ -207,7 +207,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista de números mayores al pivote.
+   * Test for the lowerList method with a list of numbers larger than the pivot.
    */
   test("lowerList - Positive Test 3") {
     val result = Workshop2.lowerList(List(1, 2, 3), 4)
@@ -215,7 +215,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista vacía.
+   * Test for the lowerList method with an empty list.
    */
   test("lowerList - Positive Test 4") {
     val result = Workshop2.lowerList(List(), 5)
@@ -223,7 +223,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista sin números menores al pivote.
+   * Test for the lowerList method with a list with no numbers less than the pivot number.
    */
   test("lowerList - Positive Test 5") {
     val result = Workshop2.lowerList(List(5, 6, 7, 8), 1)
@@ -233,7 +233,7 @@ class Workshop2Test extends FunSuite {
   // Tests for lowerList method with negative numbers
 
   /**
-   * Prueba para el método lowerList con una lista de números negativos.
+   * Test for lowerList method with a list of negative numbers.
    */
   test("lowerList - Positive Test 6") {
     val result = Workshop2.lowerList(List(-1, -2, -3), -2)
@@ -241,7 +241,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista de números negativos iguales al pivote.
+   * Test for the lowerList method with a list of negative numbers equal to the pivot.
    */
   test("lowerList - Positive Test 7") {
     val result = Workshop2.lowerList(List(-5, -5, -5, -5), -4)
@@ -249,7 +249,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista de números negativos sin números menores al pivote.
+   * Test for the lowerList method with a list of negative numbers without numbers smaller than the pivot.
    */
   test("lowerList - Positive Test 8") {
     val result = Workshop2.lowerList(List(-1, -2, -3), -4)
@@ -257,7 +257,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista vacía.
+   * Test for the lowerList method with an empty list.
    */
   test("lowerList - Positive Test 9") {
     val result = Workshop2.lowerList(List(), -5)
@@ -265,7 +265,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista de números negativos mayores al pivote.
+   * Test for the lowerList method with a list of negative numbers larger than the pivot.
    */
   test("lowerList - Positive Test 10") {
     val result = Workshop2.lowerList(List(-5, -6, -7, -8), -1)
@@ -273,7 +273,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista de números negativos y positivos, donde el pivote es 0.
+   * Test for lowerList method with a list of negative and positive numbers, where the pivot is 0.
    */
   test("lowerList - Positive Test 11") {
     val result = Workshop2.lowerList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), 0)
@@ -281,7 +281,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método lowerList con una lista de números negativos y positivos, donde no hay números menores al pivote.
+   * Test for the lowerList method with a list of negative and positive numbers, where there are no numbers smaller than the pivot.
    */
   test("lowerList - Positive Test 12") {
     val result = Workshop2.lowerList(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5), -6)
@@ -296,7 +296,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista ordenada de forma descendente.
+   * Test for the updatedQuickSort method with a descending sorted list.
    */
   test("updatedQuickSort - Positive Test 2") {
     val result = Workshop2.updatedQuickSort(List(5, 4, 3, 2, 1))
@@ -304,7 +304,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista que contiene un solo elemento.
+   * Test for the updatedQuickSort method with a list containing a single element.
    */
   test("updatedQuickSort - Positive Test 3") {
     val result = Workshop2.updatedQuickSort(List(1))
@@ -312,7 +312,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista vacía.
+   * Test for the updatedQuickSort method with an empty list.
    */
   test("updatedQuickSort - Positive Test 4") {
     val result = Workshop2.updatedQuickSort(List())
@@ -320,7 +320,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista que contiene un solo elemento repetido.
+   * Test for the updatedQuickSort method with a list containing a single repeated element.
    */
   test("updatedQuickSort - Positive Test 5") {
     val result = Workshop2.updatedQuickSort(List(1, 1, 1, 1, 1))
@@ -330,7 +330,7 @@ class Workshop2Test extends FunSuite {
   // Tests for updatedQuickSort method with negative numbers
 
   /**
-   * Prueba para el método updatedQuickSort con una lista que contiene elementos negativos y positivos.
+   * Test for the updatedQuickSort method with a list containing negative and positive elements.
    */
   test("updatedQuickSort - Positive Test 6") {
     val result = Workshop2.updatedQuickSort(List(-1, -4, -2, -5, -7, -23, -5, -1, -3, -5))
@@ -338,7 +338,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista ordenada de forma descendente.
+   * Test for the updatedQuickSort method with a descending sorted list.
    */
   test("updatedQuickSort - Positive Test 7") {
     val result = Workshop2.updatedQuickSort(List(-5, -4, -3, -2, -1))
@@ -346,7 +346,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista que contiene un solo elemento.
+   * Test for the updatedQuickSort method with a list containing a single element.
    */
   test("updatedQuickSort - Positive Test 8") {
     val result = Workshop2.updatedQuickSort(List(-1))
@@ -354,7 +354,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista que contiene un solo elemento repetido.
+   * Test for the updatedQuickSort method with a list containing a single repeated element.
    */
   test("updatedQuickSort - Positive Test 9") {
     val result = Workshop2.updatedQuickSort(List(-5, -5, -5, -5, -5))
@@ -362,7 +362,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista de números negativos.
+   * Test for the updatedQuickSort method with a list of negative numbers.
    */
   test("updatedQuickSort - Positive Test 10") {
     val result = Workshop2.updatedQuickSort(List(-10, -5, -7, -3, -2, -1))
@@ -370,7 +370,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista ordenada de forma ascendente.
+   * Test for the updatedQuickSort method with a list sorted in ascending order.
    */
   test("updatedQuickSort - Positive Test 11") {
     val result = Workshop2.updatedQuickSort(List(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5))
@@ -378,7 +378,7 @@ class Workshop2Test extends FunSuite {
   }
 
   /**
-   * Prueba para el método updatedQuickSort con una lista mezclada de números positivos y negativos.
+   * Test for the updatedQuickSort method with a mixed list of positive and negative numbers.
    */
   test("updatedQuickSort - Positive Test 12") {
     val result = Workshop2.updatedQuickSort(List(5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5))

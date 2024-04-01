@@ -3,17 +3,17 @@ package workshop
 import scala.annotation.tailrec
 
 /**
- * Objeto que proporciona una implementación del algoritmo de QuickSort.
- * Implementa la interfaz InterfaceWorkshop2.
+ * Object that provides an implementation of the QuickSort algorithm.
+ * It implements the InterfaceWorkshop2 interface.
  */
 object Workshop2 extends InterfaceWorkshop2 {
 
   /**
-   * Divide una lista en una lista que contiene los elementos iguales al pivote.
+   * Splits a list into a list containing the elements equal to the pivot.
    *
-   * @param w     La lista de enteros a dividir.
-   * @param pivot El valor del pivote para la comparación.
-   * @return Una lista que contiene los elementos iguales al pivote.
+   * @param w     The list of integers to divide.
+   * @param pivot The pivot value for comparison.
+   * @return A list containing the elements equal to the pivot..
    */
   @tailrec
   def equalList(w: List[Int], pivot: Int, acc: List[Int] = Nil): List[Int] =
@@ -24,11 +24,11 @@ object Workshop2 extends InterfaceWorkshop2 {
     }
 
   /**
-   * Divide una lista en una lista que contiene los elementos iguales al pivote.
+   * Splits a list into a list containing the elements equal to the pivot.
    *
-   * @param w     La lista de enteros a dividir.
-   * @param pivot El valor del pivote para la comparación.
-   * @return Una lista que contiene los elementos iguales al pivote.
+   * @param w     The list of integers to divide.
+   * @param pivot The pivot value for comparison.
+   * @return A list containing the elements equal to the pivot..
    */
   @tailrec
   def greaterList(w: List[Int], pivot: Int, acc: List[Int] = Nil): List[Int] =
@@ -39,11 +39,11 @@ object Workshop2 extends InterfaceWorkshop2 {
     }
 
   /**
-   * Divide una lista en una lista que contiene los elementos menores que el pivote.
+   * Splits a list into a list containing elements smaller than the pivot.
    *
-   * @param w     La lista de enteros a dividir.
-   * @param pivot El valor del pivote para la comparación.
-   * @return Una lista que contiene los elementos menores que el pivote.
+   * @param w     The list of integers to divide.
+   * @param pivot The pivot value for comparison.
+   * @return A list containing the elements smaller than the pivot.
    */
   @tailrec
   def lowerList(w: List[Int], pivot: Int, acc: List[Int] = Nil): List[Int] =
@@ -54,10 +54,10 @@ object Workshop2 extends InterfaceWorkshop2 {
     }
 
   /**
-   * Ordena una lista utilizando el algoritmo QuickSort.
+   * Sorts a list using the QuickSort algorithm.
    *
-   * @param w La lista de enteros a ordenar.
-   * @return La lista ordenada.
+   * @param w The list of integers to sort.
+   * @return The ordered list.
    */
   def updatedQuickSort(w: List[Int]): List[Int] =
     w match {

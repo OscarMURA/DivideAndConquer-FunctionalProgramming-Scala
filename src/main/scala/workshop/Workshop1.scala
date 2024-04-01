@@ -3,18 +3,18 @@ package workshop
 import scala.annotation.tailrec
 
 /**
- * Objeto que contiene funciones para realizar la ordenación de listas
- * y contar inversiones.
+ * Object containing functions for sorting lists
+ * and counting investments.
  */
-object Workshop1 {
+object Workshop1 extends InterfaceWorkshop1 {
 
   /**
-   * Combines two sorted lists into a single sorted list and counts inversions.
+   * Combines two sorted lists into a single sorted list and counts the investments.
    *
    * @param left  The first list to combine.
    * @param right The second list to combine.
-   * @param cmp   The comparison function to determine the order of elements.
-   * @return A tuple containing the combined sorted list and the number of inversions.
+   * @param count The number of investments to date.
+   * @return A tuple containing the combined list and the number of investments.
    */
   def merge(left: List[Int], right: List[Int], cmp: (Int, Int) => Boolean): (List[Int], Int) = (left, right) match {
     case (Nil, r) => (r, 0)
@@ -30,11 +30,11 @@ object Workshop1 {
   }
 
   /**
-   * Sorts a list and counts the number of inversions using the Merge Sort algorithm.
+   * Sort a list and count the number of inversions using the Merge Sort algorithm.
    *
    * @param list The list of integers to sort.
-   * @param cmp  The comparison function to determine the order of elements.
-   * @return A tuple containing the sorted list and the number of inversions.
+   * @return A tuple containing the ordered list and the number of investments.
+   *
    */
   def mergeSort(list: List[Int], cmp: (Int, Int) => Boolean): (List[Int], Int) = {
     val n = list.length / 2

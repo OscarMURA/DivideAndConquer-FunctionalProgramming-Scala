@@ -1,101 +1,103 @@
-# Pruebas del algoritmo 1 - Cantidad de Inversiones
-Este algoritmo cuenta la cantidad de inversiones necesarias para ordenar de forma ascendente una lista. Para hacer esto el algoritmo cuenta que elementos de la cola son menores que la cabeza, y se repite recursivamente con la cola de la lista. Se detiene una vez llega a la cola de la lista.
 
-#### Prueba 1
+# Algorithm 1 Testing - Inversion Count
+This algorithm counts the number of inversions needed to sort a list in ascending order. To do this, the algorithm checks which elements in the tail are smaller than the head, and recursively repeats this process with the tail of the list. It stops once it reaches the tail of the list.
 
-**Nombre de prueba: Inversiones en lista no ordenada 1**
+#### Test 1
 
-**Entrada:** List(4, 2, 1, 3, 5, 7)
+**Test Name: Inversions in unsorted list 1**
 
-**Salida esperada:** 4
+**Input:** List(4, 2, 1, 3, 5, 7)
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista no ordenada.
+**Expected Output:** 4
 
-#### Prueba 2
+**Goal:** Verify correct functionality in an unsorted list.
 
-**Nombre de prueba: Inversiones en lista no ordenada 2**
+#### Test 2
 
-**Entrada:** List(2, 3, 9, 2, 9)
+**Test Name: Inversions in unsorted list 2**
 
-**Salida esperada:** 2
+**Input:** List(2, 3, 9, 2, 9)
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista no ordenada.
+**Expected Output:** 2
 
-#### Prueba 3
+**Goal:** Verify correct functionality in an unsorted list.
 
-**Nombre de prueba: Inversiones en lista ordenada de manera descendente**
+#### Test 3
 
-**Entrada:** List(5, 4, 3, 2, 1)
+**Test Name: Inversions in list sorted in descending order**
 
-**Salida esperada:** 10
+**Input:** List(5, 4, 3, 2, 1)
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista ordenada de manera descendente.
+**Expected Output:** 10
 
-#### Prueba 4
+**Goal:** Verify correct functionality in a list sorted in descending order.
 
-**Nombre de prueba: Inversiones en lista ordenada de manera ascendente*
+#### Test 4
 
-**Entrada:** List(0, 1, 2, 3, 4, 5)
+**Test Name: Inversions in list sorted in ascending order**
 
-**Salida esperada:** 0
+**Input:** List(0, 1, 2, 3, 4, 5)
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista ordenada.
+**Expected Output:** 0
 
-#### Prueba 5
-**Nombre de prueba: Inversiones en lista ordenada de manera descendente**
+**Goal:** Verify correct functionality in a sorted list.
 
-**Entrada:** List(4, 3, 2, 1)
+#### Test 5
 
-**Salida esperada:** 6
+**Test Name: Inversions in list sorted in descending order**
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista ordenada de manera descendente.
+**Input:** List(4, 3, 2, 1)
 
-#### Prueba 6
+**Expected Output:** 6
 
-**Nombre de prueba: Inversiones en lista vacía*
+**Goal:** Verify correct functionality in a list sorted in descending order.
 
-**Entrada:** List()
+#### Test 6
 
-**Salida esperada:** 0
+**Test Name: Inversions in empty list**
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista vacía.
+**Input:** List()
 
-#### Prueba 7
+**Expected Output:** 0
 
-**Nombre de prueba: Inversiones en lista de un elemento**
+**Goal:** Verify correct functionality in an empty list.
 
-**Entrada:** List(1)
+#### Test 7
 
-**Salida esperada:** 0
+**Test Name: Inversions in list of one element**
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista de un solo elemento.
+**Input:** List(1)
 
-#### Prueba 8
+**Expected Output:** 0
 
-**Nombre de prueba: Inversiones en lista de dos elementos**
+**Goal:** Verify correct functionality in a list of one element.
 
-**Entrada:** List(2, 1)
+#### Test 8
 
-**Salida esperada:** 1
+**Test Name: Inversions in list of two elements**
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista de dos elementos.
+**Input:** List(2, 1)
 
-#### Prueba 9
+**Expected Output:** 1
 
-**Nombre de prueba: Inversiones en lista de elementos repetidos descendentes**
+**Goal:** Verify correct functionality in a list of two elements.
 
-**Entrada:** List(2, 2, 1, 1)
+#### Test 9
 
-**Salida esperada:** 4
+**Test Name: Inversions in list of descending repeated elements**
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista de elementos repetidos descendentes
+**Input:** List(2, 2, 1, 1)
 
-#### Prueba 10
+**Expected Output:** 4
 
-**Nombre de prueba: Inversiones en lista de elementos repetidos ascendentes**
+**Goal:** Verify correct functionality in a list of descending repeated elements.
 
-**Entrada:** List(1, 1, 2, 2)
+#### Test 10
 
-**Salida esperada:** 0
+**Test Name: Inversions in list of ascending repeated elements**
 
-**Objetivo:** Verificar el correcto funcionamiento en una lista de elementos repetidos ordenados
+**Input:** List(1, 1, 2, 2)
+
+**Expected Output:** 0
+
+**Goal:** Verify correct functionality in a list of ascending repeated elements.

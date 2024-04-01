@@ -1,14 +1,13 @@
   import workshop.FileManager
 import workshop.Workshop3
 
-import scala.jdk.CollectionConverters.*
 
 @main
 def main(): Unit = {
   println()
   // Example of use
   val fileManager = new FileManager
-  // Cargar archivo y mostrar su contenido
+  // Load file and display its contents
   val loadPath = "data_500000.txt"
 
   val loadedData = fileManager.loadFileTXT(loadPath)

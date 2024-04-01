@@ -2,12 +2,12 @@ import munit.*
 import workshop.Workshop3
 
 /**
- * Clase que contiene pruebas para el método `bucketSortGeneric` de la clase `Workshop3`.
+ * Class containing tests for the bucketSortGeneric method of the Workshop3 class.
  */
 class Workshop3Test extends FunSuite {
 
   /**
-   * Prueba positiva del método `bucketSortGeneric` con una lista desordenada de números positivos.
+   * Positive test of the `bucketSortGeneric` method with an unordered list of positive numbers.
    */
   test("bucketSortGeneric - Positive Test 1: Unordered list of positive numbers") {
     val arr = List(5, 2, 9, 3, 7, 1, 4, 8, 6)
@@ -16,7 +16,7 @@ class Workshop3Test extends FunSuite {
   }
 
   /**
-   * Prueba positiva del método `bucketSortGeneric` con una lista desordenada de números negativos.
+   * Positive test of the `bucketSortGeneric` method with an unordered list of negative numbers.
    */
   test("bucketSortGeneric - Positive Test 2: Unordered list of negative numbers") {
     val arr = List(-5, -2, -9, -3, -7, -1, -4, -8, -6)
@@ -25,7 +25,7 @@ class Workshop3Test extends FunSuite {
   }
 
   /**
-   * Prueba positiva del método `bucketSortGeneric` con una lista ordenada de números positivos.
+   * Positive test of the `bucketSortGeneric` method with an ordered list of positive numbers.
    */
   test("bucketSortGeneric - Positive Test 3: Ordered list of positive numbers") {
     val arr = List(1, 2, 3, 4, 5, 6, 7, 8, 9)
@@ -34,7 +34,7 @@ class Workshop3Test extends FunSuite {
   }
 
   /**
-   * Prueba positiva del método `bucketSortGeneric` con una lista ordenada de números negativos.
+   * Positive test of the `bucketSortGeneric` method with an ordered list of negative numbers.
    */
   test("bucketSortGeneric - Positive Test 4: Ordered list of negative numbers") {
     val arr = List(-1, -2, -3, -4, -5, -6, -7, -8, -9)
@@ -43,7 +43,7 @@ class Workshop3Test extends FunSuite {
   }
 
   /**
-   * Prueba positiva del método `bucketSortGeneric` con una lista vacía de enteros.
+   * Positive test of the `bucketSortGeneric` method with an empty list of integers.
    */
   test("bucketSortGeneric - Positive Test 5: Empty list of integers") {
     val arr = List.empty[Int]
