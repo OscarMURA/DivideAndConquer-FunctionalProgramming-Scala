@@ -4,132 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f252319-9137-43b1-8269-a173fe02d364" name="Changes" comment="">
+    <list default="true" id="55a702fc-3ff3-45b0-997b-6a3b983443ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/workshop/Workshop2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/workshop/Workshop2.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="SBT">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ti1-2024-1-e5-sopas" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Scala Worksheet" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1711427169" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feedback" />
-                    <option name="lastUsedInstant" value="1711427168" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2dKe7YPtw5ImM038ar7FmxiZY6z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Workshop1Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Workshop2Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Workshop3Test.executor&quot;: &quot;Run&quot;,
-    &quot;MUnit.Workshop1Test.executor&quot;: &quot;Run&quot;,
-    &quot;MUnit.Workshop3Test.bucketSortGeneric - Positive Test 1: Desordenado positivo.executor&quot;: &quot;Run&quot;,
-    &quot;MUnit.Workshop3Test.bucketSortGeneric - Positive Test 4: Ordenado negativo.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chamo/Videos/ti1-2024-1-e5-sopas&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "Merging main",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RunManager" selected="MUnit.Workshop1Test">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ti1-2024-1-e5-sopas-build" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ti1-2024-1-e5-sopas-build" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="ti1-2024-1-e5-sopas-build" />
+      <module name="ti1-2024-1-e5-sopas.hello" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -149,153 +46,20 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="ti1-2024-1-e5-sopas-build" />
+      <module name="ti1-2024-1-e5-sopas.hello" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ti1-2024-1-e5-sopas-build" />
+      <module name="ti1-2024-1-e5-sopas.hello" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Workshop1Test (2)" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="Trabajos.integradoras.ti1-2024-1-e5-sopas.hello~1" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Class" />
-      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop1Test" />
-      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop1Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="integradoras.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Class" />
-      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop1Test" />
-      <option name="workingDirectory" value="C:\Users\DELL\Desktop\Trabajos\integradoras\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop1Test.countInversions - not ordered list 1" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="C:\Users\Oscar Muñoz\Documents\4 Semestre\Integradoras\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop1Test" />
-      <option name="testName" value="countInversions - not ordered list 1" />
-      <option name="workingDirectory" value="C:\Users\Oscar Muñoz\Documents\4 Semestre\Integradoras\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop3Test.bucketSortGeneric - Positive Test 1: Desordenado positivo" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="chamo.Videos.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="C:\Users\chamo\Videos\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop3Test" />
-      <option name="testName" value="bucketSortGeneric - Positive Test 1: Desordenado positivo" />
-      <option name="workingDirectory" value="C:\Users\chamo\Videos\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Workshop3Test.bucketSortGeneric - Positive Test 4: Ordenado negativo" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="chamo.Videos.ti1-2024-1-e5-sopas.hello" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="C:\Users\chamo\Videos\ti1-2024-1-e5-sopas" />
-      <option name="testClassPath" value="Workshop3Test" />
-      <option name="testName" value="bucketSortGeneric - Positive Test 4: Ordenado negativo" />
-      <option name="workingDirectory" value="C:\Users\chamo\Videos\ti1-2024-1-e5-sopas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="ti1-2024-1-e5-sopas-build" />
+      <module name="ti1-2024-1-e5-sopas.hello" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -308,7 +72,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="ti1-2024-1-e5-sopas-build" />
+      <module name="ti1-2024-1-e5-sopas.hello" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -330,7 +94,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Python.FlaskServer">
-      <module name="ti1-2024-1-e5-sopas-build" />
+      <module name="ti1-2024-1-e5-sopas.hello" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -343,7 +107,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="ti1-2024-1-e5-sopas-build" />
+      <module name="ti1-2024-1-e5-sopas.hello" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -354,70 +118,11 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="MUnit.Workshop1Test" />
-        <item itemvalue="MUnit.Workshop1Test (2)" />
-        <item itemvalue="MUnit.Workshop1Test.countInversions - not ordered list 1" />
-        <item itemvalue="MUnit.Workshop3Test.bucketSortGeneric - Positive Test 4: Ordenado negativo" />
-        <item itemvalue="MUnit.Workshop3Test.bucketSortGeneric - Positive Test 1: Desordenado positivo" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ScalaProjectSettings">
     <option name="scala3DisclaimerShown" value="true" />
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="3f252319-9137-43b1-8269-a173fe02d364" name="Changes" comment="" />
-      <created>1709761033666</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1709761033666</updated>
-      <workItem from="1709761036385" duration="140000" />
-      <workItem from="1709761296720" duration="397000" />
-      <workItem from="1709905664309" duration="825000" />
-      <workItem from="1709907192230" duration="2998000" />
-      <workItem from="1709911804708" duration="203000" />
-      <workItem from="1709912019360" duration="2907000" />
-      <workItem from="1709935102959" duration="727000" />
-      <workItem from="1710371340040" duration="7676000" />
-      <workItem from="1710419561187" duration="7677000" />
-      <workItem from="1710430548278" duration="3678000" />
-      <workItem from="1710438443088" duration="8105000" />
-      <workItem from="1710450037045" duration="1562000" />
-      <workItem from="1710513112228" duration="461000" />
-      <workItem from="1710516862273" duration="6024000" />
-      <workItem from="1710528781404" duration="790000" />
-      <workItem from="1710536281374" duration="47000" />
-      <workItem from="1710538230088" duration="3083000" />
-      <workItem from="1710642740208" duration="4848000" />
-      <workItem from="1710969866171" duration="851000" />
-      <workItem from="1710984407865" duration="397000" />
-      <workItem from="1711149908606" duration="614000" />
-      <workItem from="1711151155827" duration="452000" />
-      <workItem from="1711151625120" duration="1463000" />
-      <workItem from="1711990558886" duration="1036000" />
-      <workItem from="1711998101584" duration="674000" />
-      <workItem from="1712023908589" duration="690000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-    </ignored-roots>
   </component>
 </project>
