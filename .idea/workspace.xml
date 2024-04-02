@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f252319-9137-43b1-8269-a173fe02d364" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="MUnit.Workshop1Test">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ti1-2024-1-e5-sopas-build" />
       <method v="2">
@@ -405,6 +405,9 @@
       <workItem from="1711149908606" duration="614000" />
       <workItem from="1711151155827" duration="452000" />
       <workItem from="1711151625120" duration="1463000" />
+      <workItem from="1711990558886" duration="1036000" />
+      <workItem from="1711998101584" duration="674000" />
+      <workItem from="1712023908589" duration="690000" />
     </task>
     <servers />
   </component>
