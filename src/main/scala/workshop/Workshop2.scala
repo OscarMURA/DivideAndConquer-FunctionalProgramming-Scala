@@ -63,7 +63,7 @@ object Workshop2 extends InterfaceWorkshop2 {
     w match {
       case Nil => Nil
       case head :: tail =>
-        updatedQuickSort(lowerList(w, head)) ::: equalList(w, head) ::: updatedQuickSort(greaterList(w, head))
+        updatedQuickSort(lowerList(w, head)) ++ equalList(w, head) ++ updatedQuickSort(greaterList(w, head))
     }
 
 }

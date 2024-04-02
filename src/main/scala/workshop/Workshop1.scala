@@ -1,7 +1,5 @@
 package workshop
 
-import scala.annotation.tailrec
-
 /**
  * Object containing functions for sorting lists
  * and counting investments.
@@ -16,16 +14,16 @@ object Workshop1 extends InterfaceWorkshop1 {
    * @param count The number of investments to date.
    * @return A tuple containing the combined list and the number of investments.
    */
-  def merge(left: List[Int], right: List[Int], cmp: (Int, Int) => Boolean): (List[Int], Int) = (left, right) match {
-    case (Nil, r) => (r, 0)
-    case (l, Nil) => (l, 0)
+  def merge(left: List[Int], right: List[Int], count: Int): (List[Int], Int) = (left, right) match {
+    case (Nil, right) => (right, count)
+    case (left, Nil) => (left, count)
     case (leftHead :: leftTail, rightHead :: rightTail) =>
-      if (cmp(leftHead, rightHead)) {
-        val (merged, inversions) = merge(leftTail, right, cmp)
+      if (leftHead <= rightHead) {
+        val (merged, inversions) = merge(leftTail, right, count)
         (leftHead :: merged, inversions)
       } else {
-        val (merged, inversions) = merge(left, rightTail, cmp)
-        (rightHead :: merged, left.length + inversions)
+        val (merged, inversions) = merge(left, rightTail, count + left.length)
+        (rightHead :: merged, inversions)
       }
   }
 
@@ -34,28 +32,30 @@ object Workshop1 extends InterfaceWorkshop1 {
    *
    * @param list The list of integers to sort.
    * @return A tuple containing the ordered list and the number of investments.
-   *
    */
-  def mergeSort(list: List[Int], cmp: (Int, Int) => Boolean): (List[Int], Int) = {
+  def mergeSort(list: List[Int]): (List[Int], Int) = {
     val n = list.length / 2
     if (n == 0) (list, 0)
     else {
       val (left, right) = list.splitAt(n)
-      val (sortedLeft, leftInversions) = mergeSort(left, cmp)
-      val (sortedRight, rightInversions) = mergeSort(right, cmp)
-      val (merged, splitInversions) = merge(sortedLeft, sortedRight, cmp)
+      val (sortedLeft, leftInversions) = mergeSort(left)
+      val (sortedRight, rightInversions) = mergeSort(right)
+      val (merged, splitInversions) = merge(sortedLeft, sortedRight, 0)
       (merged, leftInversions + rightInversions + splitInversions)
     }
   }
 
   /**
-   * Counts the number of inversions in a list using the Merge Sort algorithm.
+   * Count the number of investments in a list using the Merge Sort algorithm.
    *
-   * @param list The list of integers to count inversions in.
-   * @return The number of inversions in the list.
+   * @param list The list of integers in which to count the investments.
+   * @return The number of investments in the list.
    */
   def countInversions(list: List[Int]): Int = {
-    mergeSort(list, (x, y) => x <= y)._2
+    val (_, inversions) = mergeSort(list)
+    // do not assign the first return of the mergesort (the ordered list)
+    // the second return (number of inversions) is assigned to the variable inversions
+    inversions
   }
 
 }
