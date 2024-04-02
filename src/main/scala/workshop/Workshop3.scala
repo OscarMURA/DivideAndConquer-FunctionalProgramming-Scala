@@ -64,8 +64,11 @@ object Workshop3 extends InterfaceWorkshop3 {
       case Nil => buckets
       case head :: tail =>
         val index: Int = (functionInterval(head, maxVal, buckets.length) - 1) max 0
-        val newBuckets = buckets.updated(index, head :: buckets(index))
-        divideIntoBuckets(tail, newBuckets, maxVal)
+        val updatedBuckets = buckets.zipWithIndex.map {
+          case (bucket, i) if i == index => head :: bucket
+          case (bucket, _) => bucket
+        }
+        divideIntoBuckets(tail, updatedBuckets, maxVal)
     }
 
     // Initialization of variables
